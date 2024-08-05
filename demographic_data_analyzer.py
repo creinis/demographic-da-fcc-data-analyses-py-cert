@@ -16,10 +16,20 @@ def calculate_demographic_data(print_data=True):
     percentage_bachelors = round(
       (df[df['education'] == 'Bachelors'].shape[0] / df.shape[0]) * 100, 1)
     
+    # What percentage of people with advanced education (`Bachelors`, `Masters`, or `Doctorate`) make more than 50K?
+    higher_education = df[df['education'].isin(
+      ['Bachelors', 'Masters', 'Doctorate'])]
+    higher_education_rich = round(
+      (higher_education[higher_education['salary'] == '>50K'].shape[0] /
+       higher_education.shape[0]) * 100, 1)
+    
+    
+    
     return {
       'race_count': race_count,
       'average_age_men': average_age_men,
       'percentage_bachelors': percentage_bachelors,
+      'higher_education_rich': higher_education_rich,
     }
 
 
