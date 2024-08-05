@@ -9,4 +9,12 @@ def calculate_demographic_data(print_data=True):
     # This should be a Pandas series with race names as the index labels.
     race_count = df['race'].value_counts()
     
-    
+    # What is the average age of men?
+    average_age_men = round(df[df['sex'] == 'Male']['age'].mean(), 1)
+
+
+
+
+
+
+
