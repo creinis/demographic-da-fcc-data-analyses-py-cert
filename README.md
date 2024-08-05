@@ -3,7 +3,7 @@
 ###### Technologies:
 <p align="center">
 <img src="https://img.icons8.com/color/75/000000/python.png" width="75" height="75" alt="Python" style="margin: 10px 15px 0 15px;" />
-<img src="https://pandas.pydata.org/static/img/pandas_white.svg" width="75" height="75" alt="Pandas" style="margin: 10px 15px 0 15px;" />
+<img src="https://pandas.pydata.org/static/img/pandas_white.svg" width="175" height="175" alt="Pandas" style="margin: 10px 15px 0 15px;" />
 </p>
 
 ### Try it!
